@@ -1,0 +1,41 @@
+<div class="wrapper">
+  <header>
+    <div class="logo">
+      <a href="/index.html"
+        ><img src="assets/LOGO HOTELb.png" width="15%" alt="Logo"
+      /></a>
+    </div>
+
+    <nav>
+      <a href="javascript:;" title="" class="btn" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="menu" #menu>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a (click)="navigateTo('/home')" title="" class="menu__link"
+              >Home</a
+            >
+          </li>
+          <li class="menu__item">
+            <a title="" class="menu__link" (click)="navigateTo('/about')"
+              >About Us</a
+            >
+          </li>
+          <li class="menu__item">
+            <a (click)="navigateTo('/collection')" title="" class="menu__link"
+              >The Collection</a
+            >
+          </li>
+          <li class="menu__item">
+            <a (click)="navigateTo('/contact')" title="" class="menu__link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>

@@ -1,0 +1,140 @@
+<div class="wrapper">
+  <div class="imgppal">
+    <div class="img-div">
+      <img src="/assets/Images/Collection-bgfiltro.jpg" width="100%" alt="" />
+    </div>
+    <div class="tituloppal"><h1>The Collection & Properties</h1></div>
+  </div>
+
+  <main class="container">
+    <h1><span style="color: #b89535">The FVK </span>Collection</h1>
+    <h2>
+      Our ultra-luxury private residences include villas, chalets and spas, as
+      well as a 5-star superior hotel. Each one is chosen for its unique
+      character and is designed impeccably in the Ultima colours. Browse our
+      growing portfolio of destinations below.
+    </h2>
+    <div class="slideshow-container">
+      <div
+        *ngFor="let imageUrl of imageUrls; let i = index"
+        class="mySlides fade"
+        [class.active]="currentIndex === i"
+      >
+        <img
+          [src]="imageUrl"
+          *ngIf="currentIndex === i"
+          alt="Slide {{ i + 1 }}"
+          style="width: 100%"
+        />
+      </div>
+
+      <div>
+        <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+        <a class="next" (click)="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div>
+        <span
+          *ngFor="let _ of imageUrls; let i = index"
+          class="dot"
+          [class.active]="currentIndex === i"
+          (click)="currentSlide(i)"
+          style="text-align: center"
+        ></span>
+      </div>
+    </div>
+    <h1>Visit <span style="color: #b89535">Us</span></h1>
+    <h2>
+      You could be joining us at any one of our properties within the
+      Collection. It’s almost as if we become a part of the family — not only
+      getting to know and anticipate your needs but delighting you with
+      surprises along the way. It could be a chilled bottle of champagne after
+      your afternoon swim or games set-out for the children while you’re
+      enjoying some downtime in the spa.
+    </h2>
+  </main>
+  <section class="container2">
+    <div class="card-container">
+      <div class="card1">
+        <div class="card-img">
+          <img src="/assets/Images/card-courchevel.jpeg" width="100%" alt="" />
+        </div>
+        <div class="card-copy">
+          <h2>Coverchel Belvedere ✧ France</h2>
+          <p>
+            <span class="material-icons"> holiday_village </span>2<span
+              class="material-icons"
+            >
+              bed </span
+            >4-5<span class="material-icons"> spa </span>Spa<span
+              class="material-icons"
+            >
+              downhill_skiing </span
+            >Ski
+          </p>
+        </div>
+      </div>
+      <div class="card2">
+        <div class="card-img">
+          <img
+            src="/assets/Images/card-cransmontana.jpeg"
+            width="100%"
+            alt=""
+          />
+        </div>
+        <div class="card-copy">
+          <h2>Crans Montana ✧ Switzerland</h2>
+          <p>
+            <span class="material-icons"> holiday_village </span>2<span
+              class="material-icons"
+            >
+              bed </span
+            >16<span class="material-icons"> spa </span>Spa<span
+              class="material-icons"
+            >
+              downhill_skiing </span
+            >Ski
+          </p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card-img">
+          <img src="/assets/Images/card-corfu.jpeg" width="100%" alt="" />
+        </div>
+        <div class="card-copy">
+          <h2>Corfu ✧ Greece</h2>
+          <p>
+            <span class="material-icons"> holiday_village </span>1<span
+              class="material-icons"
+            >
+              bed </span
+            >6<span class="material-icons"> spa</span>Spa<span
+              class="material-icons"
+            >
+              sailing </span
+            >Sailing
+          </p>
+        </div>
+      </div>
+      <div class="card2">
+        <div class="card-img">
+          <img src="/assets/Images/card-grandvilla.jpeg" width="100%" alt="" />
+        </div>
+        <div class="card-copy">
+          <h2>Geneva Grand Villa ✧ Switzerland</h2>
+          <p>
+            <span class="material-icons"> holiday_village </span>1<span
+              class="material-icons"
+            >
+              bed </span
+            >9<span class="material-icons"> spa</span>Spa<span
+              class="material-icons"
+            >
+              fireplace</span
+            >Fireplace
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
