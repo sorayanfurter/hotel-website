@@ -9,7 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { CollectionComponent } from './collection/collection.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http'
     NavbarComponent,
     HomeComponent,
     CollectionComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

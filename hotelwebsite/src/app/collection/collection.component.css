@@ -67,13 +67,13 @@ body {
   align-items: center;
 }
 
-.tituloppal h1 {
+.tituloppal h1{
   display: grid;
   justify-items: center;
   justify-content: center;
   font-family: "Italiana";
-  font-weight: 100;
-  font-size: 70px;
+  font-size: 60px;
+  text-shadow: 2px 2px  #535353;
   color: #fff;
 }
 
@@ -85,7 +85,7 @@ body {
   justify-content: center;
   height: auto;
   background-color: #fff;
-  margin: 100px 40px 50px 40px;
+  margin: 80px 40px 50px 40px;
 }
 
 .container h1 {
@@ -93,7 +93,7 @@ body {
   font-size: 50pt;
   font-weight: 100;
   margin-bottom: 30px;
-  margin-top: 40px;
+
 }
 
 .container h2 {
@@ -250,91 +250,16 @@ body {
   font-size: large;
 }
 
-footer {
-  display: inline-flex;
-  padding: 30px 30px 30px 30px;
-  background-color: #000;
-  justify-content: space-between;
-  font-family: "Italiana";
-}
-
-.footer {
-  display: grid;
-  grid-area: footer;
-  vertical-align: middle;
-}
-
 h4 {
   color: #d3ba87;
   vertical-align: middle;
 }
 
-.redes {
-  vertical-align: middle;
-  display: inline-flex;
-  flex-flow: row;
-}
-
-.btn-redes {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 0.5px;
-  color: #d3ba87;
-  overflow: hidden;
-  border-style: solid;
-  text-align: center;
-}
-
-.btn-redes i {
-  line-height: 50px;
-  font-size: 20px;
-  transition: 0.2s linear;
-}
-
-.btn-redes:hover i {
-  transform: scale(1.3);
-}
-
-.copyright {
-  display: inline-block;
-  align-self: start;
-  vertical-align: middle;
-  line-height: 50px;
-}
-
 @media (max-width: 440px) {
-  .header {
-    grid-area: header;
-    grid-template-columns: 1fr;
-  }
-
-  div .logo {
-    display: grid;
-    place-items: center;
-    text-align: center;
-  }
-
-  .menu {
-    justify-content: center;
-    grid-template-columns: 1fr;
-    text-align: center;
-
-  }
-
-  .menu.is-active {
-    grid-area: header;
-    text-align: center;
-  }
-
-  .menu__list {
-    text-align: center;
-    justify-items: center;
-  }
 
   .tituloppal h1 {
     margin-top: 30px;
-    font-size: 35px;
+    font-size: 0px;
     text-align: center;
     color: #fff;
   }
@@ -378,21 +303,5 @@ h4 {
   grid-column-start: 2;
   grid-column-end: 5;
 }
-
-  .btn-redes {
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-  }
-
-  .btn-redes i {
-    line-height: 30px;
-    font-size: 20px;
-    transition: 0.2s linear;
-  }
-
-  .copyright {
-    font-size: 12px;
-  }
 
 }

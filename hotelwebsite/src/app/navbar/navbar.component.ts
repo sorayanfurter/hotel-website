@@ -16,6 +16,7 @@ export class NavbarComponent {
     this.router.navigate([route]).then(() => {
       if (this.menu) {
         (this.menu.nativeElement as HTMLElement).classList.remove('is-active'); // Remove the 'is-active' class to close the menu
+        this.isMenuOpen = !this.isMenuOpen;
       }
     });
   }
@@ -23,8 +24,12 @@ export class NavbarComponent {
   toggleMenu() {
     if (this.menu) {
       (this.menu.nativeElement as HTMLElement).classList.toggle('is-active'); // Toggle the 'is-active' class
+      this.isMenuOpen = !this.isMenuOpen;
     }
   }
+
+  isMenuOpen: boolean = false;
+
 
 
 
