@@ -215,24 +215,28 @@
 
 a:link {
   text-decoration: none;
+
 }
 
-.calltoacto a:visited {
+.calltoact
+.calltoact a:visited {
   text-decoration: none;
 }
 
-.calltoacto a:hover {
+.calltoact a:hover {
   text-decoration: none;
 }
 
-.calltoacto a:active {
+.calltoact a:active {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .calltoact h3 {
   margin-left: 10px;
   font-family: "Italiana";
   font-weight: 400;
+  cursor: pointer;
 }
 
 .content2 {
