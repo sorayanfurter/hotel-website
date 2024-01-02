@@ -25,67 +25,64 @@ body {
   display: grid;
   grid-area: imgppal;
   grid-template-areas: "overlay";
-
 }
 
 .img-div {
- grid-area: overlay;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-
+  grid-area: overlay;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 
-.tituloppal{
+.tituloppal {
   display: grid;
   grid-area: overlay;
   z-index: 2;
   align-items: center;
 }
 
-.tituloppal h1{
+.tituloppal h1 {
   display: grid;
   justify-items: center;
-  justify-content:center;
+  justify-content: center;
   font-family: "Italiana";
   font-size: 70px;
   color: #fff;
   font-weight: 100;
-  text-shadow: 2px 2px  #535353;
-
+  text-shadow: 2px 2px #535353;
 }
 
- .titulo {
+.titulo {
   display: grid;
   place-content: center;
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row: auto;
-  font-family: 'Italiana';
+  font-family: "Italiana";
   font-weight: 300;
   font-size: 70px;
   text-align: center;
@@ -118,7 +115,7 @@ body {
 
 .formulario {
   display: grid;
-  margin:20px 0px 20px 10px;
+  margin: 20px 0px 20px 10px;
   display: grid;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -133,34 +130,34 @@ body {
   padding: 20px;
   font-family: "Italiana";
   letter-spacing: 3px;
-  color:#d3ba87;
+  color: #d3ba87;
   font-size: 38px;
-  border:2px solid #d3ba87;
+  border: 2px solid #d3ba87;
 }
 
 .formulario .input_field {
   margin-bottom: 10px;
 }
 
-.formulario .input_field input[type="text"], .formulario .input_field input[type="email"],
+.formulario .input_field input[type="text"],
+.formulario .input_field input[type="email"],
 .formulario textarea {
   width: 100%;
   border: 1px solid #d3ba87;
   padding: 10px;
 }
 
-
 .formulario textarea {
   height: 80px;
   resize: none;
 }
 
-button[type="submit"] {
+.formulario button[type="submit"] {
   display: grid;
   margin-top: 15px;
   margin-bottom: 0px;
   padding: 10px;
-  width: 400px;
+  max-width: 400px;
   background-color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -170,10 +167,9 @@ button[type="submit"] {
   font-family: "Italiana";
   font-weight: 600;
   color: #d3ba87;
-
 }
 
-.btn-form{
+.btn-form {
   display: grid;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -188,8 +184,7 @@ button[type="submit"] {
   text-align: center;
   font-size: 18px;
   transition: all 0.5s ease;
-  font-family: 'Lato';
-
+  font-family: "Lato";
 }
 .formulario #my-form-status {
   margin-top: 20px;
@@ -200,7 +195,7 @@ button[type="submit"] {
   font-size: 18px;
   transition: all 0.5s ease;
   border-radius: 5px;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 .googlemaps {
@@ -213,14 +208,13 @@ button[type="submit"] {
   font-weight: 100;
   margin-top: 20px;
   justify-items: center;
-
 }
 
-.mails{
+.mails {
   grid-column-start: 2;
   grid-column-end: 5;
   text-align: center;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -229,27 +223,24 @@ button[type="submit"] {
 }
 
 @media (max-width: 440px) {
-
-
-  .tituloppal h1{
- font-size: 0px;
-
+  .tituloppal h1 {
+    font-size: 0px;
   }
 
-  .titulo{
+  .titulo {
     margin-top: 0px;
     font-size: 30pt;
   }
 
   .copy {
-   font-size: 18px;
+    font-size: 18px;
     margin: 0px 0px 0px 0px;
   }
 
   .formulario {
     display: grid;
-    margin:20px 0px 0px 0px;
-
+    margin: 20px 0px 0px 0px;
+    grid-template-columns: 1fr;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-template-rows: auto;
@@ -268,9 +259,9 @@ button[type="submit"] {
     font-weight: 100;
   }
 
-  .mails{
+
+  .mails {
     font-size: 14px;
     margin-bottom: 20px;
   }
-
 }
