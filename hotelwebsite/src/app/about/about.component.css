@@ -73,8 +73,9 @@ body {
   justify-items: center;
   justify-content: center;
   font-family: "Italiana";
+  font-weight: 100;
   font-size: 70px;
-  text-shadow: 2px 2px  #535353;
+
   color: #fff;
 }
 

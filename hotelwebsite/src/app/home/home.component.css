@@ -51,10 +51,12 @@
   align-items: center;
   justify-content: center;
   font-family: "Italiana";
+  font-weight: 100;
   font-size: 60px;
   text-align: center;
   color: #fff;
-  text-shadow: 2px 2px  #535353;
+  text-shadow: 1px 1px  #535353;
+  letter-spacing: 1pt
 }
 
 .img-div {

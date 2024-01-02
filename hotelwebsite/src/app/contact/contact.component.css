@@ -74,7 +74,9 @@ body {
   font-family: "Italiana";
   font-size: 70px;
   color: #fff;
+  font-weight: 100;
   text-shadow: 2px 2px  #535353;
+
 }
 
  .titulo {
@@ -132,7 +134,7 @@ body {
   font-family: "Italiana";
   letter-spacing: 3px;
   color:#d3ba87;
-  font-size: 35px;
+  font-size: 38px;
   border:2px solid #d3ba87;
 }
 
@@ -153,21 +155,29 @@ body {
   resize: none;
 }
 
-.formulario .btn-form button[type="submit"] {
-  border: 0;
+button[type="submit"] {
+  display: grid;
   margin-top: 15px;
   margin-bottom: 0px;
   padding: 10px;
-  width: 100%;
-  background-color: #d3ba87;
+  width: 400px;
+  background-color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-
-  color: black;
+  border: 2px solid #d3ba87;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 0px;
   font-family: "Italiana";
-  font-weight: 100;
+  font-weight: 600;
+  color: #d3ba87;
+
+}
+
+.btn-form{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  justify-content: center;
 }
 
 .formulario #error_message {
@@ -178,7 +188,8 @@ body {
   text-align: center;
   font-size: 18px;
   transition: all 0.5s ease;
-  border-radius: 5px;
+  font-family: 'Lato';
+
 }
 .formulario #my-form-status {
   margin-top: 20px;
@@ -189,7 +200,7 @@ body {
   font-size: 18px;
   transition: all 0.5s ease;
   border-radius: 5px;
-  text-align: center;
+  font-family: 'Lato';
 }
 
 .googlemaps {
